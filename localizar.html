@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/custom.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+            .bd-placeholder-img {
+              font-size: 1.125rem;
+              text-anchor: middle;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+      
+            @media (min-width: 768px) {
+              .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+              }
+            }
+          </style>
+    <title>Bomdbico</title>
+</head>
+<body>
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #007d91">
+          <a class="navbar-brand" href="index.html" style="height:2.5em"><img src="images/index_small.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-home"></i> Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-users"></i> Profissionais</a>
+                </li>
+                <li class="nav-item">
+                    <a href="localizar.html" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-globe" aria-hidden="true"></i> Onde encontrar?</a>
+                </li>
+              </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar por um profissional" aria-label="Procurar" style="width: 20em; margin: 0.5em">
+              <button class="btn btn-light my-2 my-sm-0" type="submit" style="margin: 0.5em"><i class="fa fa-search" aria-hidden="true"></i> Procurar!</button>
+            </form>
+          </div>
+          </nav>
+        </header>
+          <br>
+            <br>
+            <main role="main">          
+              <div class="container">
+               <!-- START THE FEATURETTES -->
+               <p class="h1">Localize um profissional bomdbico</p>
+                  <br>
+                  <form>
+                      <div class="form-row">
+                        <div class="col">
+                            <label for="categoria" >Categoria</label>
+                            <select name="categoria" class="form-control" required>
+                              <option value="">Selecione</option>
+                              <option value="Eletricista">Eletricista</option>
+                              <option value="Pintor">Pintor</option>
+                              <option value="Marceneiro">Marceneiro</option>
+                              <option value="Encanador">Encanador</option>
+                              <option value="Advogado">Advogado</option>
+                              <option value="Cabeleleiro">Cabeleleiro</option>
+                              <option value="Motoboy">Motoboy</option>
+                              <option value="Carpinteiro">Carpinteiro</option>
+                              <option value="Programador">Programador</option>
+                              <option value="Técnico em informática">Técnico em informática</option>
+                              <option value="Manicure">Manicure</option>
+                            </select>
+                          </div>
+                          <div class="col">
+                            <label for="bairro">Bairro</label>
+                          <input type="text" class="form-control" placeholder="Tirol, Lagoa Nova..." name="bairro">
+                        </div>
+                        <div class="col">
+                            <label for="cidade" >Cidade</label>
+                            <input type="text" class="form-control" placeholder="Natal, Santa Cruz..." name="cidade">
+                          </div>
+                          <div class="col">
+                            <label for="valor">Valor</label>
+                          <input type="text" class="form-control" placeholder="R$50" name="valor">
+                        </div>
+                        <div class="col"> 
+                          <label for="dispo">Disponibilidade</label>
+                          <select name="categoria" class="form-control" required>
+                              <option value="">Selecione</option>
+                              <option value="Manhã">Manhã</option>
+                              <option value="Tarde">Tarde</option>
+                              <option value="Noite">Noite</option>
+                            </select>
+                        </div>
+                      </div>
+                    </form>
+              </div>
+              <br>
+              <div class="container">
+                  <div class="mapouter"><div class="gmap_canvas"><iframe width="1100px" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=natal&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:575px;width:1100px;}.gmap_canvas {overflow:hidden;background:none!important;height:575px;width:1100px;}</style></div>
+                </div>
+              
+              <!-- Marketing messaging and featurettes
+              ================================================== -->
+              <!-- Wrap the rest of the page in another container to center all the content. -->
+            
+              <div class="container marketing">
+                  <hr class="featurette-divider">
+            
+                <!-- Three columns of text below the carousel -->
+                <h2>Melhores profissionais bomdbico</h2>
+                <br>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" src="images/mulher1.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                    <h2>Luciana Teixeira</h2>
+                    <p><img src="images/arquitetura.png" alt="arquitetura"></p>
+                    <p>Arquiteta</p>
+                    <p>Apaixonada por arquitetura, Luciana tem como um diferencial a sua forma de explicar com detalhe e paciência os seus trabalhos</p>
+                    <p>
+                    <span class="btn btn-success">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half" aria-hidden="true"></i> 
+                      Nota 9.8</span>
+                    </p>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" src="images/contadora.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                    <h2>Ana Clara</h2>
+                    <p><img src="images/contador-icon-150x150.png" alt="contador"></p>
+                    <p>Contadora</p>
+                    <p>Ana Clara é bastante atenciosa com seus clientes e tem um dom para te ajudar a tentar resolver as suas contas.</p>
+                    <p>
+                    <span class="btn btn-success">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      Nota 8.5</span>
+                    </p>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" src="images/programador.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                    <h2>Newton Azevedo</h2>
+                    <p><img src="images/seo-web-code-icon.png" alt="code"></p>
+                    <p>Programador Fullstack</p>
+                    <p>Especialista em desenvolvimento Python como backend e HTML com CSS no frondend, bastante apaixonado por tecnologias em programação utilizadas atualmente.</p>
+                    <p>
+                    <span class="btn btn-success">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half" aria-hidden="true"></i>
+                      Nota 7.5</span>
+                    </p>
+                  </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+                <hr class="featurette-divider">
+                <h2>Melhores avaliações</h2>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="bd-placeholder-img rounded-circle" src="images/doceira.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                        <h2>Maria Antônia</h2><h4 class="text-muted">(Doceira)</h4>
+                        <p style="text-align: left">Gostei muito do trabalho, achei incrível a forma em que foi feito os doces, com um ótimo... mais</p>
+                        <p><span class="btn btn-success btn-sm">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i> 
+                          Nota 9.5</span></p>
+                        <p style="color: chocolate">Marcela Tais - 27/11/2018 às 17:30 </p>
+                   </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="bd-placeholder-img rounded-circle" src="images/advogada.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                        <h2>Margarete Albuquerque</h2><h4 class="text-muted">(Advogada)</h4>
+                        <p style="text-align: left">Ótimo trabalho, ganhou a minha causa super rápido, detalhou muito e bem honesta informando todos os problemas e... mais</p>
+                        <p><span class="btn btn-success btn-sm">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i> 
+                          Nota 9.2</span></p>
+                        <p style="color: chocolate">Armando Batista - 30/05/2018 às 7:30</p>
+                   </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="bd-placeholder-img rounded-circle" src="images/eletricista.png" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                        <h2>Pedro Augusto</h2><h4 class="text-muted">(Eletricista)</h4>
+                        <p style="text-align: left">O conserto da rede elétrica da minha casa estava péssimo e ele rapidamente consertou sem cobrar muito... mais</p>
+                        <p> <span class="btn btn-success btn-sm">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                          Nota 9</span></p>
+                        <p style="color: chocolate">Carlos Pereira - 13/05/2018 às 10:35</p>
+                   </div><!-- /.col-lg-4 -->
+                   
+                </div><!-- /.row -->
+            
+              </div><!-- /.container -->
+              <div class="container">
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                          <form action="">
+                            <div class="card-body">
+                              <h4 class="card-title">Cadastre-se</h4>
+                              <h6 class="card-subtitle mb-2 text-muted">Informe seus dados pessoais para cadastro</h6>
+                              <div class="form-group">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Digite seu nome completo">
+                              </div>
+                              <div class="form-group">
+                                    <label for="telefone">Telefone:</label>
+                                    <input type="text" class="form-control" id="telefone" placeholder="(DDD) 00000-0000">
+                              </div>
+                              <div class="form-group">
+                                  <label for="email">Email:</label>
+                                  <input type="email" class="form-control" id="telefone" placeholder="exemplo@provedor.com">
+                            </div>
+                              <div class="form-group">
+                                    <label for="login">Login:</label>
+                                    <input type="text" class="form-control" id="login">
+                              </div>
+                              <div class="form-group">
+                                    <label for="exampleInputPassword1">Senha:</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                  <i class="fa fa-paper-plane" aria-hidden="true"></i> Cadastrar
+                              </button>
+                              <button type="reset" class="btn btn-primary bg-danger" >
+                                  <i class="fa fa-trash" aria-hidden="true"></i> Limpar
+                              </button>
+                              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle"><i class="fa fa-smile-o"></i> Cadastro realizado com sucesso!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        Aguarde nosso contato e te enviaremos um email com mais informações!
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar mensagem</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </form>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <form action="">
+                              <div class="card-body">
+                                <h4 class="card-title">Área do profissional</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">Informe login e senha abaixo para acessar o sistema</h6>
+                                <div class="form-group">
+                                      <label for="login">Login:</label>
+                                      <input type="text" class="form-control" id="login">
+                                </div>
+                                <div class="form-group">
+                                      <label for="exampleInputPassword1">Senha:</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <button type="button" class="btn btn-primary bg-success"style="margin-left:1em">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i> Entrar
+                                </button>
+                                <button type="button" class="btn btn-primary bg-info"style="margin-left:1em">
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i> Esqueci a senha
+                                </button>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            <br>
+            
+              <!-- FOOTER -->
+              <footer style="background-color: #007d91; margin-bottom:-3em; color:white">
+                <div class="container" style="padding-top: 1.5em; padding-bottom: 1.5em">
+                    <div class="row" style="margin-left: -1.5em">
+                        <div class="col-lg-4">
+                            Telefone: 84 - 4005 9843 / 9842/ 9841 / 9844 <br />
+                            Av. Senador Salgado Filho, Tirol. Natal/RN <br />
+                            CEP 59015-000 - Email: contato@bomdbico.com
+                        </div>
+                        <div class="col-lg-4" style="text-align: center; padding-top:1.5em">
+                                 bomdbico.com 
+                        </div>
+                        <div class="col-lg-4" style="text-align: center;">
+                            <img src="images/instagram.png" alt="Instagram" style="margin:1em; margin-left: 1.5em">
+                            <img src="images/twitter.png" alt="twitter" style="margin:1em; margin-left: 1.5em">
+                            <img src="images/whatsapp.png" alt="whatsapp" style="margin:1em; margin-left: 1.5em">
+                        </div>
+                    </div>
+                </div>
+              </footer>
+            </main>
+<script src="js/bootstrap.min.js"></script>   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
