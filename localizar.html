@@ -23,7 +23,7 @@
               }
             }
           </style>
-    <title>Bomdbico</title>
+    <title>Bomdbico - Localizar profissional</title>
 </head>
 <body>
       <header>
@@ -38,10 +38,13 @@
                     <a href="index.html" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-home"></i> Página Inicial</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-users"></i> Profissionais</a>
+                    <a href="profissionais.html" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-users"></i> Profissionais</a>
                 </li>
                 <li class="nav-item">
                     <a href="localizar.html" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-globe" aria-hidden="true"></i> Onde encontrar?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-phone-square" aria-hidden="true"></i> Contato</a>
                 </li>
               </ul>
             <form class="form-inline mt-2 mt-md-0">
@@ -58,7 +61,6 @@
                <!-- START THE FEATURETTES -->
                <p class="h1">Localize um profissional bomdbico</p>
                   <br>
-                  <form>
                       <div class="form-row">
                         <div class="col">
                             <label for="categoria" >Categoria</label>
@@ -99,11 +101,134 @@
                             </select>
                         </div>
                       </div>
-                    </form>
+                        <div class="form-row">
+                            <div class="col"> 
+                              <br>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#encontrar_profissional">
+                                    <i class="fa fa-search-location" aria-hidden="true"></i> Encontrar!
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="encontrar_profissional" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                      <div class="modal-content modal-lg">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLongTitle">Profissionais encontrados</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Encontramos 10 resultados:
+                                            <br /> <br />
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                  <tr>
+                                                    <td><img class="rounded-circle" src="images/mulher8.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                    </td>
+                                                    <td style="padding-top: 2em">Marcos Pereira da Silva</td>
+                                                    <td style="padding-top: 2em">Advogado</td>
+                                                    <td style="padding-top: 2em">9.5</td>
+                                                    <td style="padding-top: 2em">Entre R$1000 e R$2000</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="rounded-circle" src="images/mulher2.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                      </td> 
+                                                    <td style="padding-top: 2em">Camila Ferreira Albuquerque</td>
+                                                    <td style="padding-top: 2em">Contadora</td>
+                                                    <td style="padding-top: 2em">8.5</td>
+                                                    <td style="padding-top: 2em">Entre R$500 e R$100</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="rounded-circle" src="images/mulher3.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                      </td>
+                                                    <td style="padding-top: 2em">Amanda Carolina Pereira Melo</td>
+                                                    <td style="padding-top: 2em">Administradora</td>
+                                                    <td style="padding-top: 2em">9</td>
+                                                    <td style="padding-top: 2em">Entre R$600 e R$1000</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="rounded-circle" src="images/mulher9.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                      </td>
+                                                    <td style="padding-top: 2em">Jadson Amaral Gurgel</td>
+                                                    <td style="padding-top: 2em">Eletricista</td>
+                                                    <td style="padding-top: 2em">7</td>
+                                                    <td style="padding-top: 2em">Entre R$50 e R$100</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="rounded-circle" src="images/mulher4.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                      </td>
+                                                    <td style="padding-top: 2em">Cristiane Leandro Miranda da Silva</td>
+                                                    <td style="padding-top: 2em">Programadora</td>
+                                                    <td style="padding-top: 2em">9.9</td>
+                                                    <td style="padding-top: 2em">Entre R$1000 e R$2000</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="rounded-circle" src="images/mulher5.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                      </td>
+                                                    <td style="padding-top: 2em">Monic Laura Da Silva</td>
+                                                    <td style="padding-top: 2em">Técnico de Informática</td>
+                                                    <td style="padding-top: 2em">9.5</td>
+                                                    <td style="padding-top: 2em">Entre R$100 e R$300</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="rounded-circle" src="images/mulher10.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                      </td>
+                                                    <td style="padding-top: 2em">Bruno Amaral da Cunha</td>
+                                                    <td style="padding-top: 2em">Educador físico</td>
+                                                    <td style="padding-top: 2em">9.2</td>
+                                                    <td style="padding-top: 2em">Entre R$300 e R$600</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="rounded-circle" src="images/mulher11.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                      </td>
+                                                    <td style="padding-top: 2em">Thiago de Souza Nascimento</td>
+                                                    <td style="padding-top: 2em">Eletrotécnico</td>
+                                                    <td style="padding-top: 2em">9.5</td>
+                                                    <td style="padding-top: 2em">Entre R$1000 e R$1500</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="rounded-circle" src="images/mulher6.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                      </td>
+                                                    <td style="padding-top: 2em">Silvina Martines Mattos</td>
+                                                    <td style="padding-top: 2em">Professora</td>
+                                                    <td style="padding-top: 2em">9.5</td>
+                                                    <td style="padding-top: 2em">Entre R$1000 e R$2000</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="rounded-circle" src="images/mulher7.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                                      </td>
+                                                    <td style="padding-top: 2em">Jadna Cavalcante De las Penha</td>
+                                                    <td style="padding-top: 2em">Redatora</td>
+                                                    <td style="padding-top: 2em">9</td>
+                                                    <td style="padding-top: 2em">Entre R$1000 e R$2000</td>
+                                                   <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
               </div>
               <br>
               <div class="container">
-                  <div class="mapouter"><div class="gmap_canvas"><iframe width="1100px" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=natal&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:575px;width:1100px;}.gmap_canvas {overflow:hidden;background:none!important;height:575px;width:1100px;}</style></div>
+                  <div class="mapouter"><div class="gmap_canvas"><iframe width="1105px" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=natal&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:575px;width:1105px;}.gmap_canvas {overflow:hidden;background:none!important;height:575px;width:1105px;}</style></div>
                 </div>
               
               <!-- Marketing messaging and featurettes
@@ -270,25 +395,26 @@
                     <div class="col-lg-6">
                         <div class="card">
                             <form action="">
-                              <div class="card-body">
-                                <h4 class="card-title">Área do profissional</h4>
-                                <h6 class="card-subtitle mb-2 text-muted">Informe login e senha abaixo para acessar o sistema</h6>
-                                <div class="form-group">
-                                      <label for="login">Login:</label>
-                                      <input type="text" class="form-control" id="login">
+                                <div class="card-body">
+                                  <h4 class="card-title">Área do profissional</h4>
+                                  <h6 class="card-subtitle mb-2 text-muted">Informe login e senha abaixo para acessar o sistema</h6>
+                                  <div class="form-group">
+                                        <label for="login">Login:</label>
+                                        <input type="text" class="form-control" id="login">
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="exampleInputPassword1">Senha:</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <br>
+                                        <button type="button" class="btn btn-primary bg-success">
+                                            <i class="fa fa-paper-plane" aria-hidden="true"></i> Entrar
+                                        </button>
+                                        <button type="button" class="btn btn-primary bg-info">
+                                            <i class="fa fa-question-circle" aria-hidden="true"></i> Esqueci a senha
+                                        </button>
+                                  </div>
                                 </div>
-                                <div class="form-group">
-                                      <label for="exampleInputPassword1">Senha:</label>
-                                      <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <button type="button" class="btn btn-primary bg-success"style="margin-left:1em">
-                                    <i class="fa fa-paper-plane" aria-hidden="true"></i> Entrar
-                                </button>
-                                <button type="button" class="btn btn-primary bg-info"style="margin-left:1em">
-                                    <i class="fa fa-question-circle" aria-hidden="true"></i> Esqueci a senha
-                                </button>
-                              </div>
-                            </form>
+                              </form>
                         </div>
                     </div>
                   </div>
