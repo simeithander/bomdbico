@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/custom.css" >
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
             .bd-placeholder-img {
@@ -47,12 +48,54 @@
                   <a href="contato.html" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-phone-square" aria-hidden="true"></i> Contato</a>
               </li>
               </ul>
-            <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar por um profissional" aria-label="Procurar" style="width: 20em; margin: 0.5em">
-              <button class="btn btn-light my-2 my-sm-0" type="submit" style="margin: 0.5em"><i class="fa fa-search" aria-hidden="true"></i> Procurar!</button>
-            </form>
-          </div>
-          </nav>
+              <form class="form-inline mt-2 mt-md-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar por um profissional" aria-label="Procurar" style="width: 20em; margin: 0.5em">
+                  <button class="btn btn-light my-2 my-sm-0" type="button" style="margin: 0.5em" data-toggle="modal" data-target="#modal_pesquisa"><i class="fa fa-search" aria-hidden="true"></i> Procurar!</button>
+                </form>
+              </div>
+              </nav>
+              <!-- Modal -->
+              <div class="modal fade" id="modal_pesquisa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Resultados da pesquisa</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          Encontramos 3 resultados:
+                          <br /> <br />
+                          <table class="table table-hover">
+                              <tbody>
+                                <tr>
+                                  <td><img class="rounded-circle" src="images/doceira.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                  </td>
+                                  <td style="padding-top: 2em">Maria Antonia Ferreira</td>
+                                  <td style="padding-top: 2em">Doceira</td>
+                                  <td style="padding-top: 2em">9.8</td>
+                                  <td style="padding-top: 2em">Entre R$100 e R$1000</td>
+                                 <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle" src="images/mulher2.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                                    </td> 
+                                  <td style="padding-top: 2em">Camila Ferreira Albuquerque</td>
+                                  <td style="padding-top: 2em">Doceira</td>
+                                  <td style="padding-top: 2em">8.5</td>
+                                  <td style="padding-top: 2em">Entre R$500 e R$100</td>
+                                 <td style="padding-top: 2em"><a href="perfil.html" class="btn btn-outline-success btn-sm"><i class="fa fa-search" aria-hidden="true"></i></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> Fechar pesquisa</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
         </header>
           <br>
             <br>
@@ -233,10 +276,11 @@
                 <br>
                 <div class="row">
                   <div class="col-lg-4">
+                    <a href="perfil.html">
                     <img class="bd-placeholder-img rounded-circle" src="images/mulher1.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
-                    <h2>Luciana Teixeira</h2>
-                    <p><img src="images/arquitetura.png" alt="arquitetura"></p>
-                    <p>Arquiteta</p>
+                  </a>
+                    <h2>Luciana Teixeira</h2><h4 class="text-muted"><i class="fa fa-home"></i><br> Arquiteta</h4>
+                    <p><a href="perfil.html" class="btn btn-info btn-sm"><i class="fa fa-portrait "></i> Visualizar perfil</a></p>
                     <p>Apaixonada por arquitetura, Luciana tem como um diferencial a sua forma de explicar com detalhe e paciência os seus trabalhos</p>
                     <p>
                     <span class="btn btn-success">
@@ -249,26 +293,28 @@
                     </p>
                   </div><!-- /.col-lg-4 -->
                   <div class="col-lg-4">
-                    <img class="bd-placeholder-img rounded-circle" src="images/contadora.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
-                    <h2>Ana Clara</h2>
-                    <p><img src="images/contador-icon-150x150.png" alt="contador"></p>
-                    <p>Contadora</p>
-                    <p>Ana Clara é bastante atenciosa com seus clientes e tem um dom para te ajudar a tentar resolver as suas contas.</p>
-                    <p>
-                    <span class="btn btn-success">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                      Nota 8.5</span>
-                    </p>
+                      <a href="perfil.html">
+                      <img class="bd-placeholder-img rounded-circle" src="images/contadora.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+                      </a>
+                      <h2>Ana Clara</h2><h4 class="text-muted"><i class="fa fa-calculator"></i><br> Contadora</h4>
+                      <p><a href="perfil.html" class="btn btn-info btn-sm"><i class="fa fa-portrait "></i> Visualizar perfil</a></p>
+                      <p>Ana Clara é bastante atenciosa com seus clientes e tem um dom para te ajudar a tentar resolver as suas contas.</p>
+                      <p>
+                      <span class="btn btn-success">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        Nota 8.5</span>
+                      </p>
                   </div><!-- /.col-lg-4 -->
                   <div class="col-lg-4">
+                    <a href="perfil.html">
                     <img class="bd-placeholder-img rounded-circle" src="images/programador.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
-                    <h2>Newton Azevedo</h2>
-                    <p><img src="images/seo-web-code-icon.png" alt="code"></p>
-                    <p>Programador Fullstack</p>
-                    <p>Especialista em desenvolvimento Python como backend e HTML com CSS no frondend, bastante apaixonado por tecnologias em programação utilizadas atualmente.</p>
+                    </a>
+                    <h2>Newton Azevedo</h2><h4 class="text-muted"><i class="fa fa-code"></i><br> Programador</h4>
+                    <p><a href="perfil.html" class="btn btn-info btn-sm"><i class="fa fa-portrait "></i> Visualizar perfil</a></p>
+                    <p>Especialista em desenvolvimento Python como backend e HTML com CSS no frontend, atualmente está se aperceiçoando em JS.</p>
                     <p>
                     <span class="btn btn-success">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -284,8 +330,11 @@
                 <br>
                 <div class="row">
                     <div class="col-lg-4">
+                        <a href="perfil.html">
                         <img class="bd-placeholder-img rounded-circle" src="images/doceira.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
-                        <h2>Maria Antônia</h2><h4 class="text-muted">(Doceira)</h4>
+                        </a>
+                        <h2>Maria Antônia</h2><h4 class="text-muted"><i class="fa fa-candy-cane"></i><br> Doceira</h4>
+                        <p><a href="perfil.html" class="btn btn-info btn-sm"><i class="fa fa-portrait "></i> Visualizar perfil</a></p>
                         <p style="text-align: left">Gostei muito do trabalho, achei incrível a forma em que foi feito os doces, com um ótimo... mais</p>
                         <p><span class="btn btn-success btn-sm">
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -297,8 +346,11 @@
                         <p style="color: chocolate">Marcela Tais - 27/11/2018 às 17:30 </p>
                    </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
+                        <a href="perfil.html">
                         <img class="bd-placeholder-img rounded-circle" src="images/advogada.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
-                        <h2>Margarete Albuquerque</h2><h4 class="text-muted">(Advogada)</h4>
+                        </a>
+                        <h2>Margarete Albuquerque</h2><h4 class="text-muted"><i class="fa fa-gavel"></i><br> Advogada</h4>
+                        <p><a href="perfil.html" class="btn btn-info btn-sm"><i class="fa fa-portrait "></i> Visualizar perfil</a></p>
                         <p style="text-align: left">Ótimo trabalho, ganhou a minha causa super rápido, detalhou muito e bem honesta informando todos os problemas e... mais</p>
                         <p><span class="btn btn-success btn-sm">
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -310,8 +362,12 @@
                         <p style="color: chocolate">Armando Batista - 30/05/2018 às 7:30</p>
                    </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
+                        <a href="perfil.html">
                         <img class="bd-placeholder-img rounded-circle" src="images/eletricista.png" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
-                        <h2>Pedro Augusto</h2><h4 class="text-muted">(Eletricista)</h4>
+                        </a>
+                        <h2>Pedro Augusto</h2><h4 class="text-muted"><i class="fa fa-bolt"></i> <br>Eletricista</h4>
+                        <p><a href="perfil.html" class="btn btn-info btn-sm"><i class="fa fa-portrait "></i> Visualizar perfil</a></p>
+
                         <p style="text-align: left">O conserto da rede elétrica da minha casa estava péssimo e ele rapidamente consertou sem cobrar muito... mais</p>
                         <p> <span class="btn btn-success btn-sm">
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -373,7 +429,7 @@
                                         Aguarde nosso contato e te enviaremos um email com mais informações!
                                       </div>
                                       <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar mensagem</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> Fechar mensagem</button>
                                       </div>
                                     </div>
                                   </div>
