@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/custom.css" >
+    <script src="mascara.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
             .bd-placeholder-img {
@@ -310,11 +311,11 @@
                                     <label for="exampleInputPassword1">Senha:</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1">
                                     <br>
-                                    <button type="button" class="btn btn-primary bg-success">
-                                        <i class="fa fa-paper-plane" aria-hidden="true"></i> Entrar
-                                    </button>
                                     <button type="button" class="btn btn-primary bg-info">
                                         <i class="fa fa-question-circle" aria-hidden="true"></i> Esqueci a senha
+                                    </button>
+                                    <button type="button" class="btn btn-primary bg-success">
+                                        <i class="fa fa-paper-plane" aria-hidden="true"></i> Entrar
                                     </button>
                               </div>
                             </div>
@@ -347,7 +348,7 @@
                           </div>
                           <div class="form-group">
                                 <label for="telefone">Telefone:</label>
-                                <input type="text" class="form-control" id="telefone" placeholder="(DDD) 00000-0000">
+                                <input type="text" class="form-control" id="telefone" placeholder="(DDD) 00000-0000" onkeyup="mascara('(##) #####-####',this,event,true)">
                           </div>
                           <div class="form-group">
                               <label for="email">Email:</label>
@@ -361,11 +362,11 @@
                                 <label for="exampleInputPassword1">Senha:</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1">
                           </div>
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                              <i class="fa fa-paper-plane" aria-hidden="true"></i> Cadastrar
-                          </button>
                           <button type="reset" class="btn btn-primary bg-danger" >
                               <i class="fa fa-trash" aria-hidden="true"></i> Limpar
+                          </button>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                              <i class="fa fa-paper-plane" aria-hidden="true"></i> Cadastrar
                           </button>
                           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered" role="document">
