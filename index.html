@@ -17,7 +17,7 @@
               -ms-user-select: none;
               user-select: none;
             }
-      
+
             @media (min-width: 768px) {
               .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -46,6 +46,12 @@
                 </li>
                 <li class="nav-item">
                   <a href="contato.html" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-phone-square" aria-hidden="true"></i> Contato</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" data-toggle="modal" data-target="#modal-login" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              </li>
+                <li class="nav-item">
+                  <a href="#" data-toggle="modal" data-target="#modal-cadastre-se" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-clipboard-list" aria-hidden="true"></i> Cadastre-se</a>
               </li>
               </ul>
             <form class="form-inline mt-2 mt-md-0">
@@ -80,7 +86,7 @@
                             </tr>
                             <tr>
                                 <td><img class="rounded-circle" src="images/mulher2.jpg" width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
-                                </td> 
+                                </td>
                               <td style="padding-top: 2em">Camila Ferreira Albuquerque</td>
                               <td style="padding-top: 2em">Doceira</td>
                               <td style="padding-top: 2em">8.5</td>
@@ -98,7 +104,7 @@
             </div>
         </header>
             <main role="main">
-            
+
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -146,10 +152,10 @@
                   <span class="sr-only">Próximo</span>
                 </a>
               </div>
-              
+
               <div class="container">
                <!-- START THE FEATURETTES -->
-                  
+
                <div class="row featurette">
                   <div class="col-md-7">
                     <h2 class="featurette-heading">A nossa missão: <br/><span class="text-muted">Queremos ajudar você!</span></h2>
@@ -162,14 +168,14 @@
             <br>
              <!-- /END THE FEATURETTES -->
               </div>
-              
+
               <!-- Marketing messaging and featurettes
               ================================================== -->
               <!-- Wrap the rest of the page in another container to center all the content. -->
-            
+
               <div class="container marketing">
                   <hr class="featurette-divider">
-            
+
                 <!-- Three columns of text below the carousel -->
                 <h2>Melhores profissionais bomdbico</h2>
                 <br>
@@ -187,7 +193,7 @@
                       <i class="fa fa-star" aria-hidden="true"></i>
                       <i class="fa fa-star" aria-hidden="true"></i>
                       <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star-half" aria-hidden="true"></i> 
+                      <i class="fa fa-star-half" aria-hidden="true"></i>
                       Nota 9.8</span>
                     </p>
                   </div><!-- /.col-lg-4 -->
@@ -240,7 +246,7 @@
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half" aria-hidden="true"></i> 
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
                           Nota 9.5</span></p>
                         <p style="color: chocolate">Marcela Tais - 27/11/2018 às 17:30 </p>
                    </div><!-- /.col-lg-4 -->
@@ -256,7 +262,7 @@
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half" aria-hidden="true"></i> 
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
                           Nota 9.2</span></p>
                         <p style="color: chocolate">Armando Batista - 30/05/2018 às 7:30</p>
                    </div><!-- /.col-lg-4 -->
@@ -276,97 +282,119 @@
                           Nota 9</span></p>
                         <p style="color: chocolate">Carlos Pereira - 13/05/2018 às 10:35</p>
                    </div><!-- /.col-lg-4 -->
-                   
+
                 </div><!-- /.row -->
-            
-            
+
+
               </div><!-- /.container -->
-              <div class="container">
-                <br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card">
-                          <form action="">
+            <br>
+            <!-- Modal -->
+            <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card">
                             <div class="card-body">
-                              <h4 class="card-title">Cadastre-se</h4>
-                              <h6 class="card-subtitle mb-2 text-muted">Informe seus dados pessoais para cadastro</h6>
-                              <div class="form-group">
-                                    <label for="nome">Nome</label>
-                                    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Digite seu nome completo">
-                              </div>
-                              <div class="form-group">
-                                    <label for="telefone">Telefone:</label>
-                                    <input type="text" class="form-control" id="telefone" placeholder="(DDD) 00000-0000">
-                              </div>
-                              <div class="form-group">
-                                  <label for="email">Email:</label>
-                                  <input type="email" class="form-control" id="telefone" placeholder="exemplo@provedor.com">
-                            </div>
+                              <h6 class="card-subtitle mb-2 text-muted">Informe login e senha abaixo para acessar o sistema</h6>
                               <div class="form-group">
                                     <label for="login">Login:</label>
                                     <input type="text" class="form-control" id="login">
                               </div>
-                              <div class="form-group">
+                              <div class="form-group" style="margin-bottom: -0.6em">
                                     <label for="exampleInputPassword1">Senha:</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1">
-                              </div>
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                                  <i class="fa fa-paper-plane" aria-hidden="true"></i> Cadastrar
-                              </button>
-                              <button type="reset" class="btn btn-primary bg-danger" >
-                                  <i class="fa fa-trash" aria-hidden="true"></i> Limpar
-                              </button>
-                              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                  <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLongTitle"><i class="fa fa-smile-o"></i> Cadastro realizado com sucesso!</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">&times;</span>
-                                        </button>
-                                      </div>
-                                      <div class="modal-body">
-                                        Aguarde nosso contato e te enviaremos um email com mais informações!
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> Fechar mensagem</button>
-                                      </div>
-                                    </div>
-                                  </div>
+                                    <br>
+                                    <button type="button" class="btn btn-primary bg-success">
+                                        <i class="fa fa-paper-plane" aria-hidden="true"></i> Entrar
+                                    </button>
+                                    <button type="button" class="btn btn-primary bg-info">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i> Esqueci a senha
+                                    </button>
                               </div>
                             </div>
-                            </div>
-                          </div>
-                        </form>
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <form action="">
-                                <div class="card-body">
-                                  <h4 class="card-title">Área do profissional</h4>
-                                  <h6 class="card-subtitle mb-2 text-muted">Informe login e senha abaixo para acessar o sistema</h6>
-                                  <div class="form-group">
-                                        <label for="login">Login:</label>
-                                        <input type="text" class="form-control" id="login">
-                                  </div>
-                                  <div class="form-group">
-                                        <label for="exampleInputPassword1">Senha:</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
-                                        <br>
-                                        <button type="button" class="btn btn-primary bg-success">
-                                            <i class="fa fa-paper-plane" aria-hidden="true"></i> Entrar
-                                        </button>
-                                        <button type="button" class="btn btn-primary bg-info">
-                                            <i class="fa fa-question-circle" aria-hidden="true"></i> Esqueci a senha
-                                        </button>
-                                  </div>
-                                </div>
-                              </form>
-                        </div>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">  <i class="fa fa-times" aria-hidden="true"></i> Cancelar</button>
+                  </div>
                 </div>
-            <br>
-            
+              </div>
+            </div>
+            <!-- Modal Cadastre-se -->
+            <div class="modal fade" id="modal-cadastre-se" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Cadastre-se</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card">
+                      <form action="">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-muted">Informe seus dados pessoais para cadastro</h6>
+                          <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Digite seu nome completo">
+                          </div>
+                          <div class="form-group">
+                                <label for="telefone">Telefone:</label>
+                                <input type="text" class="form-control" id="telefone" placeholder="(DDD) 00000-0000">
+                          </div>
+                          <div class="form-group">
+                              <label for="email">Email:</label>
+                              <input type="email" class="form-control" id="telefone" placeholder="exemplo@provedor.com">
+                        </div>
+                          <div class="form-group">
+                                <label for="login">Login:</label>
+                                <input type="text" class="form-control" id="login">
+                          </div>
+                          <div class="form-group">
+                                <label for="exampleInputPassword1">Senha:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                              <i class="fa fa-paper-plane" aria-hidden="true"></i> Cadastrar
+                          </button>
+                          <button type="reset" class="btn btn-primary bg-danger" >
+                              <i class="fa fa-trash" aria-hidden="true"></i> Limpar
+                          </button>
+                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle"><i class="fa fa-smile-o"></i> Cadastro realizado com sucesso!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Aguarde nosso contato e te enviaremos um email com mais informações!
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> Fechar mensagem</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
               <!-- FOOTER -->
               <footer style="background-color: #007d91; margin-bottom:-3em; color:white">
                 <div class="container" style="padding-top: 1.5em; padding-bottom: 1.5em">
@@ -377,7 +405,7 @@
                             CEP 59015-000 - Email: contato@bomdbico.com
                         </div>
                         <div class="col-lg-4" style="text-align: center; padding-top:1.5em">
-                                 bomdbico.com 
+                                 bomdbico.com
                         </div>
                         <div class="col-lg-4" style="text-align: center;">
                             <img src="images/instagram.png" alt="Instagram" style="margin:1em; margin-left: 1.5em">
@@ -388,7 +416,7 @@
                 </div>
               </footer>
             </main>
-<script src="js/bootstrap.min.js"></script>   
+<script src="js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
