@@ -47,6 +47,12 @@
                 <li class="nav-item">
                   <a href="contato.html" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-phone-square" aria-hidden="true"></i> Contato</a>
               </li>
+              <li class="nav-item">
+                <a href="#" data-toggle="modal" data-target="#modal-login" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              </li>
+                <li class="nav-item">
+                  <a href="#" data-toggle="modal" data-target="#modal-cadastre-se" class="btn btn-light" style="margin: 0.5em"><i class="fa fa-clipboard-list" aria-hidden="true"></i> Cadastre-se</a>
+              </li>
               </ul>
               <form class="form-inline mt-2 mt-md-0">
                   <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar por um profissional" aria-label="Procurar" style="width: 20em; margin: 0.5em">
@@ -120,7 +126,111 @@
                           </div>
                         </div>
                       </div>
-                  </div>        
+                  </div>
+                  <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card">
+                            <div class="card-body">
+                              <h6 class="card-subtitle mb-2 text-muted">Informe login e senha abaixo para acessar o sistema</h6>
+                              <div class="form-group">
+                                    <label for="login">Login:</label>
+                                    <input type="text" class="form-control" id="login">
+                              </div>
+                              <div class="form-group" style="margin-bottom: -0.6em">
+                                    <label for="exampleInputPassword1">Senha:</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <br>
+                                    <button type="button" class="btn btn-primary bg-info">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i> Esqueci a senha
+                                    </button>
+                                    <button type="button" class="btn btn-primary bg-success">
+                                        <i class="fa fa-paper-plane" aria-hidden="true"></i> Entrar
+                                    </button>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">  <i class="fa fa-times" aria-hidden="true"></i> Cancelar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modal-cadastre-se" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Cadastre-se</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card">
+                      <form action="">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-muted">Informe seus dados pessoais para cadastro</h6>
+                          <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Digite seu nome completo">
+                          </div>
+                          <div class="form-group">
+                                <label for="telefone">Telefone:</label>
+                                <input type="text" class="form-control" id="telefone" placeholder="(DDD) 00000-0000" onkeyup="mascara('(##) #####-####',this,event,true)">
+                          </div>
+                          <div class="form-group">
+                              <label for="email">Email:</label>
+                              <input type="email" class="form-control" id="telefone" placeholder="exemplo@provedor.com">
+                        </div>
+                          <div class="form-group">
+                                <label for="login">Login:</label>
+                                <input type="text" class="form-control" id="login">
+                          </div>
+                          <div class="form-group">
+                                <label for="exampleInputPassword1">Senha:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <button type="reset" class="btn btn-primary bg-danger" >
+                              <i class="fa fa-trash" aria-hidden="true"></i> Limpar
+                          </button>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                              <i class="fa fa-paper-plane" aria-hidden="true"></i> Cadastrar
+                          </button>
+                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle"><i class="fa fa-smile-o"></i> Cadastro realizado com sucesso!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Aguarde nosso contato e te enviaremos um email com mais informações!
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> Fechar mensagem</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">  <i class="fa fa-times" aria-hidden="true"></i> Cancelar</button>
+                  </div>
+                </div>
+              </div>
+            </div>        
               <div class="container">
                <!-- START THE FEATURETTES -->
                <p class="h1">Minha vida com os doces</p>
